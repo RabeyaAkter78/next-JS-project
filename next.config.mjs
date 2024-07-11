@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-env:{
-    
-}
+    env: {
+        MONGODB_URI: process.env.MONGODB_URI
+    }
 
 };
 

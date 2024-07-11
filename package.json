@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@shadcn/ui": "^0.0.4",
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "mongoose": "^8.5.0",
     "next": "14.2.4",
     "next-auth": "^4.24.7",
