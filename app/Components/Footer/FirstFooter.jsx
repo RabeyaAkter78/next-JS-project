@@ -5,8 +5,7 @@ const FirstFooter = () => {
         <div>
             <footer className="footer bg-base-100 text-base-content p-10">
                 <nav>
-                    <h6 className="footer-title">Simply Good <br />Food</h6>
-
+                <Image className='items-start' src="/logo (2).jpg" alt="logo" width={150} height={150} />
                 </nav>
                 <nav>
                     <a className="link link-hover">Home</a>
