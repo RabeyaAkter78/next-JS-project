@@ -13,8 +13,8 @@ export default function SignUp() {
     const [error, setError] = useState('');
     const [contact, setContact] = useState('');
     const [address, setAddress] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [showPassword, setShowPassword] = useState(true);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(true);
     const router = useRouter();
 
     const handleSubmit = async (e) => {
@@ -49,7 +49,7 @@ export default function SignUp() {
             if (res.ok) {
                 const form = e.target;
                 form.reset();
-                router.push('/');
+                router.push("/Login");
                 setError('');
             } else {
                 console.log('User Registration Failed.');
@@ -106,7 +106,7 @@ export default function SignUp() {
                                 required
                             />
                             <div className="absolute right-5 pt-12 flex items-center cursor-pointer" onClick={() => setShowPassword(!showPassword)}>
-                                {showPassword ? <IoEyeOffOutline size={20} /> : <IoEyeOutline size={20} />}
+                                {showPassword ? <IoEyeOutline size={20} /> : <IoEyeOffOutline size={20} />}
                             </div>
                         </div>
                         <div className="form-control join relative">
@@ -120,7 +120,7 @@ export default function SignUp() {
                                 required
                             />
                             <div className="absolute right-5 pt-12 flex items-center cursor-pointer" onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
-                                {showConfirmPassword ? <IoEyeOffOutline size={20} /> : <IoEyeOutline size={20} />}
+                                {showConfirmPassword ? <IoEyeOutline size={20} /> : <IoEyeOffOutline size={20} />}
                             </div>
                         </div>
                         <div className="flex justify-between items-center">
