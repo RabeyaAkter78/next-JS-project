@@ -11,14 +11,14 @@ import { TbSlash } from "react-icons/tb";
 
 // shadCn
 const Card = ({ children }) => (
-    <div className="border h-96 w-80 p-2 rounded-lg shadow-md flex flex-col justify-between">
+    <div className="border h-full w-full p-2 rounded-lg shadow-md flex flex-col justify-between">
         {children}
     </div>
 );
-const CardHeader = ({ children }) => <div className="px-4 mt-2">{children}</div>;
+const CardHeader = ({ children }) => <div className="px-2 mt-2">{children}</div>;
 const CardTitle = ({ children }) => <h2 className="text-neutral-700 font-bold my-2">{children}</h2>;
 const CardDescription = ({ children }) => <p className="text-gray-600">{children}</p>;
-const CardContent = ({ children }) => <div className="relative h-52  overflow-hidden">{children}</div>;
+const CardContent = ({ children }) => <div className="relative h-56  overflow-hidden">{children}</div>;
 const CardFooter = ({ children }) => <div className="p-4">{children}</div>;
 
 const TrendingMenu = () => {
@@ -79,12 +79,12 @@ const TrendingMenu = () => {
                             </CardHeader>
                             <CardFooter>
                                 <button className='btn bg-[#55883B] hover:bg-[#55883B] text-white w-full'>Add to cart</button>
-                                <div className='flex justify-between items-center my-2 font-semibold text-red-400'>
-                                    <p>Protein 49g </p>
+                                <div className='flex justify-between items-center my-2 font-semibold '>
+                                    <p className='text-red-400'>Protein 49g </p>
                                     <TbSlash />
-                                    <p>Carbs 23g</p>
+                                    <p className='text-red-400'>Carbs 23g</p>
                                     <TbSlash />
-                                    <p>Fat 23g</p>
+                                    <p className='text-red-400'>Fat 23g</p>
                                 </div>
                             </CardFooter>
                         </Card>
@@ -103,12 +103,12 @@ const TrendingMenu = () => {
                             </CardHeader>
                             <CardFooter>
                                 <button className='btn bg-[#55883B] hover:bg-[#55883B] text-white w-full'>Add to cart</button>
-                                <div className='flex justify-between items-center my-2 font-semibold text-red-400'>
-                                    <p>Protein 49g </p>
+                                <div className='flex justify-between items-center my-2 font-semibold '>
+                                    <p className='text-red-400'>Protein 49g </p>
                                     <TbSlash />
-                                    <p>Carbs 23g</p>
+                                    <p className='text-red-400'>Carbs 23g</p>
                                     <TbSlash />
-                                    <p>Fat 23g</p>
+                                    <p className='text-red-400'>Fat 23g</p>
                                 </div>
                             </CardFooter>
                         </Card>
@@ -127,12 +127,12 @@ const TrendingMenu = () => {
                             </CardHeader>
                             <CardFooter>
                                 <button className='btn bg-[#55883B] hover:bg-[#55883B] text-white w-full'>Add to cart</button>
-                                <div className='flex justify-between items-center my-2 font-semibold text-red-400'>
-                                    <p>Protein 49g </p>
+                                <div className='flex justify-between items-center my-2 font-semibold '>
+                                    <p className='text-red-400'>Protein 49g </p>
                                     <TbSlash />
-                                    <p>Carbs 23g</p>
+                                    <p className='text-red-400'>Carbs 23g</p>
                                     <TbSlash />
-                                    <p>Fat 23g</p>
+                                    <p className='text-red-400'>Fat 23g</p>
                                 </div>
                             </CardFooter>
                         </Card>
@@ -151,12 +151,12 @@ const TrendingMenu = () => {
                             </CardHeader>
                             <CardFooter>
                                 <button className='btn bg-[#55883B] hover:bg-[#55883B] text-white w-full'>Add to cart</button>
-                                <div className='flex justify-between items-center my-2 font-semibold text-red-400'>
-                                    <p>Protein 49g </p>
+                                <div className='flex justify-between items-center my-2 font-semibold '>
+                                    <p className='text-red-400'>Protein 49g </p>
                                     <TbSlash />
-                                    <p>Carbs 23g</p>
+                                    <p className='text-red-400'>Carbs 23g</p>
                                     <TbSlash />
-                                    <p>Fat 23g</p>
+                                    <p className='text-red-400'>Fat 23g</p>
                                 </div>
                             </CardFooter>
                         </Card>
