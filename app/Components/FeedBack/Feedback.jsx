@@ -23,8 +23,6 @@ const CardContent = ({ children }) => <div className="relative rounded-full ">{c
 
 
 const FeedBack = () => {
-
-
     return (
         <div className="my-20 p-5">
             <h1 className="text-5xl text-neutral-700 font-bold text-center">Feedbacks</h1>

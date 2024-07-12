@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 
 const MealPlan = () => {
@@ -10,7 +11,11 @@ const MealPlan = () => {
                         <br />
                         healthy and moderate</p>
                     <p className="text-green-700 my-2">Ingredients are naturally rich and full of taste</p>
-                    <button className=" btn bg-[#55883B] hover:bg-[#55883B] text-white my-5 mb-3">Meal Plan<MdArrowOutward /></button>
+                    <Link href='/product' passHref>
+                        <button className="btn bg-[#55883B] hover:bg-[#55883B] text-white my-5 mb-3 flex items-center">
+                            Meal Plan <MdArrowOutward className="ml-2" />
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="flex-1 flex justify-center items-center">
