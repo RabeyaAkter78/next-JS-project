@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <NavBar></NavBar>
         <SubNavbar></SubNavbar>
         <AuthProvider>
-          <div className="p-10">
+          <div>
             {children}
           </div>
         </AuthProvider>
