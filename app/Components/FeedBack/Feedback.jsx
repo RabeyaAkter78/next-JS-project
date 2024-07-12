@@ -48,7 +48,7 @@ const FeedBack = () => {
                     <SwiperSlide>
                         <Card>
                             <CardContent>
-                                <Image src="/fd2.jpg" alt="" className="rounded-full" width={100} height={100} objectFit="cover"/>
+                                <Image src="/fd2.jpg" alt="" className="rounded-full" width={100} height={100} objectFit="cover" />
                             </CardContent>
                             <CardHeader>
                                 <CardTitle>Anjelina</CardTitle>
@@ -74,7 +74,14 @@ const FeedBack = () => {
                     <SwiperSlide>
                         <Card>
                             <CardContent>
-                                <Image src="/fd1.jpg" alt="" className="rounded-full" width={100} height={100} objectFit="cover" />
+                                <Image
+                                    src="/fd1.jpg"
+                                    alt=""
+                                    className="rounded-full"
+                                    width={100}
+                                    height={100}
+                                    style={{ objectFit: "cover" }}
+                                />
                             </CardContent>
                             <CardHeader>
                                 <CardTitle>Anjelina</CardTitle>
@@ -87,7 +94,14 @@ const FeedBack = () => {
                     <SwiperSlide>
                         <Card>
                             <CardContent>
-                                <Image src="/fd1.jpg" alt="" className="rounded-full" width={100} height={100} objectFit="cover" />
+                                <Image
+                                    src="/fd2.jpg"
+                                    alt=""
+                                    className="rounded-full"
+                                    width={100}
+                                    height={100}
+                                    style={{ objectFit: "cover" }}
+                                />
                             </CardContent>
                             <CardHeader>
                                 <CardTitle>Anjelina</CardTitle>

@@ -11,7 +11,13 @@ export default function product() {
 
         <div className="flex-1 flex justify-center items-center  ">
           <div className="relative w-full h-full">
-            <Image src="/h1.jpg" alt="" layout="fill" objectFit="cover" className=" border-8 rounded-3xl" />
+            <Image
+              src="/mp.jpg"
+              alt="Meal Plan"
+              fill
+              style={{ objectFit: "cover" }}
+              className="border-8 rounded-3xl"
+            />
           </div>
         </div>
         <div className="w-1/2 ">
