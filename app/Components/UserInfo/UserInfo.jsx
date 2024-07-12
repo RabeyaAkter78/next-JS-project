@@ -1,5 +1,11 @@
+'use client';
+import { signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
+
 
 const UserInfo = () => {
+    const { data: session } = useSession();
+
     return (
         <div>
             <div className="overflow-x-auto ">
@@ -15,24 +21,15 @@ const UserInfo = () => {
                     <tbody>
                         {/* row 1 */}
                         <tr>
-                            <th>1</th>
-                            <td>Cy Ganderton</td>
-                            <td>Quality Control Specialist</td>
-                        </tr>
-                        {/* row 2 */}
-                        <tr>
-                            <th>2</th>
-                            <td>Hart Hagerty</td>
-                            <td>Desktop Support Technician</td>
-                        </tr>
-                        {/* row 3 */}
-                        <tr>
-                            <th>3</th>
-                            <td>Brice Swyre</td>
-                            <td>Tax Accountant</td>
+                            <th>#</th>
+                            <td>{session?.user?.name}</td>
+                            <td>{session?.user?.email}</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div>
+                <button onClick={() => signOut()} className="btn btn-danger">Logout</button>
             </div>
         </div>
     );

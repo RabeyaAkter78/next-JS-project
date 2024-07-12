@@ -6,6 +6,7 @@ import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 
 
+
 export default function SignUp() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -16,6 +17,9 @@ export default function SignUp() {
     const [showPassword, setShowPassword] = useState(true);
     const [showConfirmPassword, setShowConfirmPassword] = useState(true);
     const router = useRouter();
+
+   
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -32,7 +36,7 @@ export default function SignUp() {
                 },
                 body: JSON.stringify({ email }),
             });
-            
+
             const { user } = await resUserExists.json();
             if (user) {
                 setError('User Already Exists.');

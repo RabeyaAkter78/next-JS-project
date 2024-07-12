@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavBar from "./Components/NavBar/NavBar";
 import SubNavbar from "./Components/NavBar/SubNavbar.jsx/SubNavbar";
 import FirstFooter from "./Components/Footer/FirstFooter";
+import { AuthProvider } from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className} >
         <NavBar></NavBar>
         <SubNavbar></SubNavbar>
-        <div className="p-10">
-          {children}
-        </div>
+        <AuthProvider>
+          <div className="p-10">
+            {children}
+          </div>
+        </AuthProvider>
         <FirstFooter></FirstFooter>
       </body>
     </html>
